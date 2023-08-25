@@ -1,0 +1,8 @@
+$spacings(
+    md: 1em;
+    xl:2em;
+);
+
+@function spacings($value){
+    @return map-get(map: $spacings,key: $value)
+}
